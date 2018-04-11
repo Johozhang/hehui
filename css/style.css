@@ -1,0 +1,311 @@
+@charset "utf-8";
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "微软雅黑";
+    text-align: center;
+    background: #110d24;
+    font-size: 14px;
+}
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+img{
+    width:100%;
+    height:100%;
+}
+.am_container {
+    max-width: 640px;
+    min-width: 320px;
+    overflow: hidden;
+    padding-left: 0;
+    padding-right: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+.maskLoad{
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 500;
+    background-color: rgb(255, 255, 255);
+}
+.spinner {
+  width: 50px;
+  height: 50px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-top:-25px;
+  margin-left:-25px;
+}
+ 
+.container1 > div, .container2 > div, .container3 > div {
+  width: 10px;
+  height: 10px;
+  background-color: #13b7f6 ;
+ 
+  border-radius: 100%;
+  position: absolute;
+  -webkit-animation: bouncedelay 1.2s infinite ease-in-out;
+  animation: bouncedelay 1.2s infinite ease-in-out;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+ 
+.spinner .spinner-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+ 
+.container2 {
+  -webkit-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+}
+ 
+.container3 {
+
+  -webkit-transform: rotateZ(90deg);
+  transform: rotateZ(90deg);
+}
+ 
+.circle1 { top: 0; left: 0; }
+.circle2 { top: 0; right: 0; }
+.circle3 { right: 0; bottom: 0; }
+.circle4 { left: 0; bottom: 0; }
+
+
+ 
+.container2 .circle1 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+ 
+.container3 .circle1 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+ 
+.container1 .circle2 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+ 
+.container2 .circle2 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+ 
+.container3 .circle2 {
+  -webkit-animation-delay: -0.7s;
+  animation-delay: -0.7s;
+}
+ 
+.container1 .circle3 {
+  -webkit-animation-delay: -0.6s;
+  animation-delay: -0.6s;
+}
+ 
+.container2 .circle3 {
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s;
+}
+ 
+.container3 .circle3 {
+  -webkit-animation-delay: -0.4s;
+  animation-delay: -0.4s;
+}
+ 
+.container1 .circle4 {
+  -webkit-animation-delay: -0.3s;
+  animation-delay: -0.3s;
+}
+ 
+.container2 .circle4 {
+  -webkit-animation-delay: -0.2s;
+  animation-delay: -0.2s;
+}
+ 
+.container3 .circle4 {
+  -webkit-animation-delay: -0.1s;
+  animation-delay: -0.1s;
+}
+@-webkit-keyframes bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0.0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+ 
+@keyframes bouncedelay {
+  0%, 80%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 40% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}   
+@media (min-device-height:568px) and (-webkit-min-device-pixel-ratio:2){/* 鍏煎iphone6 */
+    .p6 .p6-1{ margin-top: 25px;}
+}
+@media (min-device-height:666px) and (-webkit-min-device-pixel-ratio:2){/* 鍏煎iphone6 */
+    .p3-1{ width: 330px; position:absolute; right:15px; top:62px;}
+    .p3-2{width: 210px;  position:absolute; right:15px; top: 148px;}
+    .p8-1{ width:310px; margin:0 auto; margin-top: 15px;}
+    .p8-2{ width:170px; position:absolute; left:20px; top: 130px;}
+    .p8-3{ width:140px; position:absolute; right:20px; top: 180px;}
+}
+
+.item{
+  background: #110d24;
+}
+.item .logo{
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 150px;
+  height: 33px;
+}
+.item .bg2{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 0;
+}
+.item .title2{
+  position: absolute;
+  width: 100px;
+  height: 24px;
+  top: 15%;
+  left: 50%;
+  margin-left: -50px;
+}
+.item .text{
+  position: absolute;
+  top: 22%;
+  width: 100%;
+}
+
+.item1 .title{
+  position: absolute;
+  top: 9%;
+  margin: 0 7%;
+}
+.item1 .logo{
+  position: absolute;
+  top: initial;
+  left: 50%;
+  bottom: 7%;
+  margin-left: -75px;
+  width: 150px;
+  height: 33px;
+}
+
+.item2 .title{
+  position: absolute;
+  top: 10%;
+  margin: 0 17%;
+}
+
+.item2 .text{
+  font-size: 0;
+  top: 18%;
+}
+.item2 .text li{
+  margin-bottom: 3%;
+}
+
+.item7 .list{
+  position: absolute;
+  top: 26%;
+  width: 100%;
+  left: 0;
+}
+.item7 .list li{
+  margin-bottom: 20px;
+}
+
+.design{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5);
+  padding: 17% 0;
+  display: none;
+  z-index: 100;
+}
+.design .close{
+  width: 37px;
+  height: 37px;
+  background: url(../images/close-icon.png);
+  background-size: 37px 37px;
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 101px;
+}
+.design img{
+  display: none;
+}
+.ban{
+  transform: none !important;
+}
+
+.item8 .title{
+  width: 250px;
+  height: 24px;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  margin-left: -125px;
+}
+.item8 .list{
+  position: absolute;
+  top: 26%;
+  width: 100%;
+  left: 0;
+}
+.item8 .list li{
+  margin-bottom: 20px;
+}
+
+.item9 .content{
+  position: absolute;
+  top: 22%;
+  width: 100%;
+  left: 0;
+}
+.item9 .content .qr-code{
+  width: 30%;
+  height: 30%;
+  margin: auto;
+}
+.item9 .contact{
+  position: relative;
+  display: block;
+}
+.item9 .contact a{
+  position: absolute;
+  width: 30%;
+  height: 18%;
+  top: 12%;
+  left: 27%;
+}
